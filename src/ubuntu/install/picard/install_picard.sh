@@ -12,5 +12,5 @@ rm -rf \
   /var/tmp/*
 
 # Default settings and desktop icon
-cp "/usr/share/applications/MusicBrainz Picard.desktop" $HOME/Desktop/
-chmod +x "$HOME/Desktop/MusicBrainz Picard.desktop"
+cp /usr/share/applications/picard.desktop $HOME/Desktop/
+chmod +x $HOME/Desktop/picard.desktop
