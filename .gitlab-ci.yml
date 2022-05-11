@@ -20,7 +20,7 @@ Build & Push Docker Image:
   when: always
   script:
     - export VERSION=$(date +%y.%m.%d)
-    - export IMAGE_NAME=dejan995/kasm-picard
+    - export IMAGE_NAME=dejan995/filemin-docker
     - docker login -u "$USER" -p "$PASSWORD"
     - docker buildx create --use
     - >
@@ -28,3 +28,4 @@ Build & Push Docker Image:
       -t $IMAGE_NAME:$VERSION
       -t $IMAGE_NAME:latest
       --push
+      .
